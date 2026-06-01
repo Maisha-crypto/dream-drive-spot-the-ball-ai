@@ -1,4 +1,4 @@
-# dream-drive-spot-the-ball-ai
+# Dream drive spot the ball AI
 An offline-first Computer Vision pipeline that predicts "Spot the Ball" coordinates by modeling human-judge decision heuristics using a Hybrid CNN-Pose Estimation network in PyTorch.
 
 ## The Core System Design Pivot
