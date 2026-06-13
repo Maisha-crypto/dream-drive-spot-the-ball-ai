@@ -45,7 +45,7 @@ def predict_ball_center(image_path):
     pred_y = int(norm_y * h_original)
 
     print(f"[RESUTLS]: Predicted coordinates relative to scale: ({norm_x:.4f},{norm_y:.4f})")
-    print(f"[RESULTS]: Mapped to Original Image Pixels: ({pred_x:.4f},{pred_y:4f})")
+    print(f"[RESULTS]: Mapped to original image pixels: ({pred_x:.4f},{pred_y:4f})")
 
     # Draw  a bright green crosshaire and circle where the predicted ball is
     cv2.circle(original_image, (pred_x, pred_y), 15, (0, 255, 0), 2)

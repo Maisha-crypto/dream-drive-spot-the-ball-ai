@@ -28,7 +28,7 @@ def train_model():
     train_loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 
     # Model, Mean Squared Error (MSE) ,Optimiser
-    model = BallCoordinatePredictor(backbone="resnet18", pretrained=True).to(DEVICE)   
+    model = BallCoordinatePredictor(backbone="resnet50", pretrained=True).to(DEVICE)   
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
