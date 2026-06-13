@@ -31,10 +31,10 @@ class BallCoordinatePredictor(nn.Module):
         coordinates = self.regression_head(features)
         return coordinates
 
-#Validation check
-if __name__ == "__main__":
-    model = BallCoordinatePredictor(backbone="resnet18")
-    dummy_batch = torch.randn(4,3,224,224)
-    output = model(dummy_batch)
-    print("Output Shape:", output.shape)
-    print("Example Prediction:", output[0])   
+# #Validation check
+# if __name__ == "__main__":
+#     model = BallCoordinatePredictor(backbone="resnet18")
+#     dummy_batch = torch.randn(4,3,224,224)
+#     output = model(dummy_batch)
+#     print("Output Shape:", output.shape)
+#     print("Example Prediction:", output[0])   

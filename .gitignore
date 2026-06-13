@@ -26,6 +26,8 @@ share/python-wheels/
 *.egg
 .venv
 .vs
+.pth
+raw
 MANIFEST
 
 # PyInstaller
