@@ -23,3 +23,10 @@ Passes the normalised images into a deep learning Convolutional Neural Network (
 >- Transfer Learning: To prevent overfitting, the model employs a pre-trained  ResNet backbone initialised with ImageNet weights, allowing the network to leverage robust edge and text detection premitive shapes immediately.
 >- Regularisation: High-ratio Dropout layers (0, 3) an dmEan Squared Error (MSE)/ Huber Loss are used to maintain generalisation during training phases.
 
+## The Results
+The first evolution approach results are mixed and inconsistent, It seems the model is struggling to pick up and generalise patterns in the previous competition winning corrdinates.
+
+The second evolution approach will introduces:
+1. Pose estimator (YOLOv8 or MediaPipe)
+2. Gaze or body vector extraction - calculating vectors from a players eyes to the ball, the shoulder to estimate where the ball might be.
+3. Intersection calculator - calculate the closest point of convergence of these vectors
